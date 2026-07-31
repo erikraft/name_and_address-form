@@ -1,10 +1,10 @@
 document.getElementById('data-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // 1. Captura dos dados
+    // 1. Captura dos dados atualizados
     const name = document.getElementById('username').value;
-    const email = document.getElementById('useremail').value;
-    const content = `Nome: ${name}\nE-mail: ${email}\nGerado em: ${new Date().toLocaleString()}`;
+    const address = document.getElementById('useraddress').value;
+    const content = `Nome: ${name}\nEndereço: ${address}\nGerado em: ${new Date().toLocaleString()}`;
 
     // Desativa botão para evitar cliques duplos durante a animação
     const submitBtn = document.getElementById('btn-submit');
