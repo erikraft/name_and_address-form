@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Dados Web</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-network-wired"></i> Fluxo de Manipulação de Dados</h1>
+            <p>Preencha os campos para ver o fluxo de dados entre o cliente e o servidor.</p>
+        </header>
+
+        <main class="grid-flow">
+            <!-- Passo 1: Formulário (Cliente) -->
+            <section class="card" id="step-client">
+                <h2><i class="fa-solid fa-laptop"></i> 1. Entrada (Cliente)</h2>
+                <form id="data-form">
+                    <div class="input-group">
+                        <label for="username">Nome:</label>
+                        <input type="text" id="username" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label for="useremail">E-mail:</label>
+                        <input type="email" id="useremail" required placeholder="Digite seu e-mail">
+                    </div>
+                    <button type="submit" id="btn-submit">Enviar Dados <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </section>
+
+            <!-- Linha de Fluxo Visual -->
+            <div class="flow-arrow" id="arrow-1">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- Passo 2: Servidor (Processamento) -->
+            <section class="card" id="step-server">
+                <h2><i class="fa-solid fa-server"></i> 2. Processamento (Servidor)</h2>
+                <div class="server-status">
+                    <div class="status-indicator" id="status-light"></div>
+                    <span id="status-text">Aguardando dados...</span>
+                </div>
+                <div class="file-mock" id="file-box">
+                    <i class="fa-regular fa-file-code"></i>
+                    <span>dados.txt</span>
+                </div>
+            </section>
+
+            <!-- Linha de Fluxo Visual -->
+            <div class="flow-arrow" id="arrow-2">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- Passo 3: Saída (Download) -->
+            <section class="card" id="step-download">
+                <h2><i class="fa-solid fa-download"></i> 3. Saída (Download)</h2>
+                <p>O arquivo está pronto para ser baixado localmente.</p>
+                <div id="download-container">
+                    <!-- O botão dinâmico será inserido aqui via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- GSAP Libs -->
+    <script src="https://cloudflare.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
