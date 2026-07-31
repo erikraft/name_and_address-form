@@ -3,9 +3,9 @@
 Este projeto é uma aplicação puramente front-end que demonstra de forma visual e interativa como funciona o envio, processamento e download de dados estruturados na web.
 
 ## 🚀 Funcionalidades
-- **Captação de Informações:** Formulário simples para entrada de dados do usuário.
+- **Captação de Informações:** Formulário simples para entrada de Nome e Endereço do usuário.
 - **Simulação Visual Dinâmica:** Uso da biblioteca GSAP para animar o fluxo do cliente para o servidor.
-- **Geração de Arquivo sob Demanda:** O sistema encapsula os dados em um arquivo virtual `dados.txt`.
+- **Geração de Arquivo sob Demanda:** O sistema encapsula os dados estruturados em um arquivo virtual `dados.txt`.
 - **Botão Dinâmico:** Injeção via JavaScript de um botão de download assim que o processamento simulado termina.
 
 ## 🛠️ Tecnologias Utilizadas
